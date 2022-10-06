@@ -9,7 +9,7 @@ public class Chef {
 		this.nom = nom;
 		this.force = force;
 		this.effetPotion = effetPotion;
-		this.Village = village;
+		this.village = village;
 	}
 	
 	public String getNom() {
