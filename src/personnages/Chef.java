@@ -1,5 +1,4 @@
 package personnages;
-
 public class Chef {
 	private String nom;
 	private int force;
@@ -10,7 +9,7 @@ public class Chef {
 		this.nom = nom;
 		this.force = force;
 		this.effetPotion = effetPotion;
-		this.village = village;
+		this.Village = village;
 	}
 	
 	public String getNom() {

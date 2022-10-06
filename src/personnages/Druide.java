@@ -37,14 +37,15 @@ public class Druide {
 	public void booster(Gaulois gaulois) {
 		if (gaulois.getNom().equals("Obelix")) {
 			System.out.println("Non, Obélix !... Tu n’auras pas de potion magique ! ");
-			return;
+		}else {
+			gaulois.boirePotion(forcePotion);
 		}
-		gaulois.boirePotion(forcePotion);
 		
 	}
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("panoramix", 5, 10);
 		panoramix.preparerPotion();
+	}
 	}
 	
 	
