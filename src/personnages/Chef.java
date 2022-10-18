@@ -1,6 +1,6 @@
 package personnages;
 public class Chef {
-	private String nom;
+	private static String nom;
 	private int force;
 	private int effetPotion = 1;
 	private Village village;
@@ -12,7 +12,7 @@ public class Chef {
 		this.village = village;
 	}
 	
-	public String getNom() {
+	public static String getNom() {
 		return nom;
 	}
 	
