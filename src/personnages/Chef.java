@@ -1,6 +1,6 @@
 package personnages;
 public class Chef {
-	private static String nom;
+	private  static String nom;
 	private int force;
 	private int effetPotion = 1;
 	private Village village;
