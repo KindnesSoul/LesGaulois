@@ -1,4 +1,5 @@
 package personnages;
+import villagegaulois.Musee;
 
 public class Gaulois {
 	private String nom;
@@ -11,7 +12,9 @@ public class Gaulois {
 		this.nom = nom;
 		this.force = force;
 	}
-
+	public int getNbTrophee() {
+		return nbtrophees;
+	}
 	public String getNom() {
 		return nom;
 	}
@@ -35,6 +38,8 @@ public class Gaulois {
 //		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 //		romain.recevoirCoup((force / 3)*effetPotion);
 //	}
+	
+// pas oublier de rajouter les trophers quand il tape . le this sert a rien 
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans lam�choire de " + romain.getNom());
 		romain.recevoirCoup((force / 3) *effetPotion);
@@ -42,7 +47,12 @@ public class Gaulois {
 			this.trophees[nbtrophees] = trophees[i];
 		}
 		}
-	
+	public void faireUneDonnation(Gaulois gaulois , Equipement[] trophees ) {
+		villagegaulois.Musee.donnerTrophee(gaulois,trophees);
+		
+		}
+		
+		
 	@Override
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force
